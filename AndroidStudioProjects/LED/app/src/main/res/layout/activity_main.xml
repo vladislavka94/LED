@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+
+    tools:context=".MainActivity"
+    android:id="@+id/osnova"
+    android:background="#e7e8ea"
+    android:contextClickable="true">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textInfo"
+        android:textSize="22dp"
+        android:textColor="#000000"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:visibility="visible" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Выберите устройство чтобы подключится!!!"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/txt2"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:layout_marginTop="460dp"
+        android:typeface="monospace"
+        />
+
+    <ListView
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/pairedlist"
+        android:textColor="#000000"
+        android:layout_below="@+id/textInfo"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp"
+
+        android:layout_marginLeft="20dp"
+        android:visibility="visible" />
+
+
+
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#e7e7e5"
+                android:id="@+id/ButPanel"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Режимы освещения"
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/txt"
+                    android:textColor="#000000"
+                    android:textSize="25dp"
+                    android:layout_marginTop="20dp"
+                    android:typeface="monospace"
+                    />
+                <!--Красный-->
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton"
+                    android:layout_gravity="left|top"
+                    android:src="@drawable/red"
+                    android:layout_marginTop="70dp"
+                    android:layout_marginLeft="30dp"
+                    android:onClick="onClickBut1" />
+
+                <!--Зеленый-->
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton3"
+                    android:src="@drawable/green"
+                    android:layout_marginTop="70dp"
+                    android:layout_gravity="center|top"
+                    android:onClick="onClickBut3" />
+
+                <!--Синий-->
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton5"
+                    android:layout_gravity="right|top"
+                    android:src="@drawable/blue"
+                    android:layout_marginTop="70dp"
+                    android:layout_marginRight="30dp"
+                    android:onClick="onClickBut5" />
+
+                <!--Фиолетовый-->
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton7"
+                    android:layout_gravity="left|top"
+                    android:src="@drawable/purpur"
+                    android:layout_marginTop="140dp"
+                    android:layout_marginLeft="30dp"
+                    android:onClick="onClickBut7" />
+
+                <!--Берюзовый-->
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton9"
+                    android:layout_gravity="center|top"
+                    android:src="@drawable/lblue"
+                    android:layout_marginTop="140dp"
+                    android:onClick="onClickBut9" />
+
+                <!--Желтый-->
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton11"
+                    android:layout_gravity="right|top"
+                    android:src="@drawable/yellow"
+                    android:layout_marginTop="140dp"
+                    android:layout_marginRight="30dp"
+                    android:onClick="onClickBut11" />
+
+                <!--Белый теплый-->
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton13"
+                    android:layout_gravity="left|top"
+                    android:src="@drawable/ww"
+                    android:layout_marginTop="210dp"
+                    android:layout_marginLeft="30dp"
+                    android:onClick="onClickBut13" />
+
+                <!--Белый холодный-->
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton15"
+                    android:layout_gravity="center|top"
+                    android:src="@drawable/cw"
+                    android:layout_marginTop="210dp"
+                    android:onClick="onClickBut14" />
+
+                <!--Выключить освещение-->
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton14"
+                    android:layout_gravity="right|top"
+                    android:layout_marginTop="210dp"
+                    android:layout_marginRight="30dp"
+                    android:src="@drawable/off"
+                    android:onClick="onClickBut15"
+                    />
+                <!--Оповещение-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/d10"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:layout_marginTop="450dp"
+                    android:typeface="monospace"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Режимы стимуляции"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="#000000"
+                    android:id="@+id/txt1"
+                    android:textSize="25dp"
+                    android:layout_marginTop="310dp"
+                    android:typeface="monospace"
+                    />
+
+                <!--Режим 1-->
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton16"
+                    android:src="@drawable/vs1"
+                    android:layout_marginTop="360dp"
+                    android:layout_gravity="left|top"
+                    android:layout_marginLeft="30dp"
+                    android:onClick="onClickBut16" />
+
+                <!--Режим 2-->
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton17"
+                    android:src="@drawable/vs2"
+                    android:layout_marginTop="360dp"
+                    android:layout_gravity="center|top"
+                    android:onClick="onClickBut17" />
+
+                <!--Режим 3-->
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton18"
+                    android:src="@drawable/vs3"
+                    android:layout_marginTop="360dp"
+                    android:layout_gravity="right|top"
+                    android:layout_marginRight="30dp"
+                    android:onClick="onClickBut18" />
+
+            </FrameLayout>
+
+
+</RelativeLayout>
+
+
+
+
